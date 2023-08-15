@@ -4,28 +4,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Lesson 03</title>
+    <title>HTML Lesson 05</title>
     <link rel="shortcut icon" href="Logo.jpg" />
     <style>
+      /* Убраны стандартные отступы */
       * {
         margin: 0;
         padding: 0;
       }
+      /* Для всех span задан цвет и размер */
       span {
         font-size: 16px;
         color: #df89e6;
       }
+      /* Для всех p задан цвет и размер */
       p {
         font-size: 16px;
         color: #fff;
       }
+      /* Отступ от краев браузера */
       .block__wrapper {
         padding: 10px;
-        margin: 0 auto;
       }
       .block__wrapper--brown {
         background: #423e3b;
-        width: 450px;
+        width: 450px; /* Зафиксирована ширина */
       }
       .block__wrapper--red {
         background: #f64243;
@@ -36,9 +39,11 @@
         background: #c69ef9;
         width: 300px;
       }
+      /* Отдельный цвет для p в блоке wisteria  */
       .block__wrapper--wisteria p {
         color: black;
       }
+      /* Отдельный цвет и фон для span в блоке wisteria  */
       .block__wrapper--wisteria span {
         color: #fff;
         background-color: #7242b2;
@@ -52,8 +57,8 @@
         <div class="block__wrapper--red"></div>
       </div>
       <div class="block__wrapper--wisteria">
+        <p>А здесь у меня какие-то элементы:</p>
         <div>
-          <p>А здесь у меня какие-то элементы:</p>
           <span>Элемент</span>
           <span>Элемент</span>
           <span>Элемент</span>
