@@ -1,0 +1,76 @@
+/* Подключаем шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Задаем параметры шрифта в тегах p */
+p,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center; /* Тег p по центру контейнера */
+}
+/* Задаем параметры основному контейнеру*/
+.container {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  max-width: 500px; /* Минимальная ширина */
+  margin: 50px auto 50px; /* Внешний отступ сверху, слева и справа (по центру), снизу */
+}
+/* Параметры контейнера для nav и main*/
+.wrapper {
+  display: flex; /* Flex-контейнер */
+  justify-content: space-around; /* Прижимаем nav и main к краям контейнера с одинаковым отступом между ними */
+  margin: 20px; /* Внешний отступ от контейнера */
+  gap: 20px; /* Внутренний отступ между nav и main  */
+}
+.wrapper__aroken {
+  border: 2px solid rgba(223, 140, 140, 0.219); /* Параметры границы */
+  max-width: 500px; /* Минимальная ширина */
+  margin: 5px; /* Внешний отступ от контейнера */
+}
+.wrapper__aroken > p {
+  font-size: 12px;
+  text-align: left;
+}
+header {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  margin: 20px; /* Внешний отступ со всех сторон */
+  background: #b6e0a1; /* Цвет фона */
+}
+nav {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  margin: 20px; /* Внешний отступ со всех сторон */
+  background: #b4b8bb; /* Цвет фона */
+}
+aside {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  width: 30%; /* Ширина которую занимает nav внутри wrapper */
+  display: flex; /* Flex-контейнер */
+  align-items: center; /* Вертикальное выравнивание элементов внутри nav по центру */
+  justify-content: center; /* Горизонтальное выравнивание элементов внутри nav по центру */
+  background: #fdcbc4; /* Цвет фона */
+}
+main {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  width: 70%; /* Ширина которую занимает main внутри wrapper */
+  background: #fceca1; /* Цвет фона */
+}
+
+.noaside {
+  width: 100%; /* Ширина которую занимает main внутри wrapper */
+}
+
+article {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  margin: 20px; /* Внешний отступ со всех сторон */
+  background: #b4b8bb; /* Цвет фона */
+}
+section {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  margin: 20px; /* Внешний отступ со всех сторон */
+  background: #78858f; /* Цвет фона */
+}
+footer {
+  border: 2px solid rgba(87, 84, 84, 0.219); /* Параметры границы */
+  margin: 20px; /* Внешний отступ со всех сторон */
+  background: #ebc1ff; /* Цвет фона */
+}
