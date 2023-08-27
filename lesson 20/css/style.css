@@ -1,3 +1,4 @@
+/* Цвет и высота шапки */
 header {
   height: 60px;
   background: #e5ab4f;
@@ -6,21 +7,21 @@ header {
 nav a {
   color: black;
 }
-
+/* Цвет и высота подвале */
 footer {
   height: 300px;
   background: #7a2cdc;
   color: white;
 }
-
+/* Цвет ссылок в подвале */
 footer a {
   color: #d4a9f6;
 }
-
+/* Высота изображения */
 img {
   height: 200px;
 }
-
+/* Цвет цитаты */
 .quote {
   background: #f6e7cf;
 }
