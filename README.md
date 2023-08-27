@@ -3,25 +3,25 @@
 Репозиторий для проверки домашних заданий по Веб-разработке учебного кабинета learn.aroken.ru
 
 > Lesson 1 (№4 по learn.aroken.ru):
-> Создание HTML страницы
+> Создание HTML страницы [Link](/00_AroCode/lesson 1/index.html)
 
 > Lesson 2 (№5 по learn.aroken.ru):
-> Синтаксис HTML
+> Синтаксис HTML [Link](/00_AroCode/lesson 2/index.html)
 
 > Lesson 3 (№6 по learn.aroken.ru):
-> Строчные, блочные теги. Вложенность и уровни вложенности
+> Строчные, блочные теги. Вложенность и уровни вложенности [Link](/00_AroCode/lesson 3/index.html)
 
 > Lesson 4 (№7 по learn.aroken.ru):
-> Селекторы
+> Селекторы [Link](/00_AroCode/lesson 4/index.html)
 
 > Lesson 5 (№8 по learn.aroken.ru):
-> Верстка тестового блока по макету
+> Верстка тестового блока по макету [Link](/00_AroCode/lesson 5/index.html)
 
 > Lesson 6 (№10 по learn.aroken.ru):
-> Семантические теги, пример семантической верстки
+> Семантические теги, пример семантической верстки [Link](/00_AroCode/lesson 6/index.html)
 
 > Lesson 7 (№11 по learn.aroken.ru):
-> Глобальная структура страниц 3-х сайтов
+> Глобальная структура страниц 3-х сайтов [Link](/00_AroCode/lesson 7/index.html)
 
 > Lesson 12-19:
 > Обзорные уроки по тегам, классом и атрибутам
