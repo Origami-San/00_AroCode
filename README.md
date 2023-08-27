@@ -28,3 +28,9 @@
 
 > Lesson 20:
 > Верстка учебного макета [Link](/00_AroCode/lesson 20/index.html)
+
+> Lesson 21-27:
+> Обзорные уроки по CSS, подготовка к домашнему заданию
+
+> Lesson 28:
+> Домашнее задание по применению CSS для шрифтов [Link](/00_AroCode/lesson 28/index.html)
