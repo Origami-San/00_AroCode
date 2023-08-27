@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+.sample_text1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.sample_text2 {
+  text-decoration: line-through;
+}
+
+.sample_text3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.sample_text4 {
+  word-spacing: 30px;
+  text-decoration: wavy overline;
+  text-shadow: 1px 1px 2px #d05ee7;
+}
+.sample_text5 {
+  letter-spacing: 5px;
+  text-decoration: double underline;
+}
