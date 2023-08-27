@@ -2,6 +2,10 @@ header {
   height: 60px;
   background: #e5ab4f;
 }
+/* Цвет шрифта ссылок в навигации */
+nav a {
+  color: black;
+}
 
 footer {
   height: 300px;
