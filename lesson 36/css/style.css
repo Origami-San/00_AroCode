@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box; /* Меняем алгоритм расчета ширины и высоты элементов */
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0; /* Сбрасываем стандартные отступы у заголовка */
+}
+
+p {
+  font-size: 25px;
+}
+
+.wrapper {
+  background: #bec0c2;
+  max-width: 1900px;
+  max-height: 800px;
+  border: 1px solid #000000;
+  border-radius: 60px 0 0 60px;
+  overflow: auto; /* Добавляем scroll когда элементов слишком много */
+}
+
+.card {
+  background: #cea06d;
+  max-width: 400px;
+  max-height: 300px;
+  border: 1px solid #bec0c2;
+  border-radius: 50px;
+  margin: 10px;
+  box-shadow: inset 0px 0px 10px 2px #817a72;
+  display: inline-block; /* Делаем элемент обтекаемым */
+}
+
+.card__content {
+  padding: 60px 50px 40px;
+}
