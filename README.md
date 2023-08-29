@@ -34,3 +34,9 @@
 
 > Lesson 28:
 > Домашнее задание по применению CSS для шрифтов [Link](/00_AroCode/lesson 28/index.html)
+
+> Lesson 29-35:
+> Обзорные уроки по основным CSS свойствам
+
+> Lesson 36:
+> Домашнее задание по применению общих свойств CSS [Link](/00_AroCode/lesson 36/index.html)
