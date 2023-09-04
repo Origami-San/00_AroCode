@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  background: #181e34;
+  font-family: "Montserrat", "Arial", sans-serif;
+  /* font-size: 16px; */
+  line-height: 150%; /* 16px+50%=24px */
+  color: #fff;
+}
+
+.container {
+  max-width: calc(
+    900px + 30px
+  ); /* ширина контейнера + отступы слева 15px и справа 15px */
+  margin: 0 auto; /* контейнер по центру */
+  padding: 0 15px; /* отступы от окна браузера */
+  height: 100%; /* высота 100% высоты родителя */
+}
+
+/* ================================================================================================ */
+
+.header {
+  padding: 30px 0 36px; /* отступы сверху 30px снизу 36px по бокам 0*/
+}
+
+.header-inner {
+  display: flex;
+  align-items: center; /* все дочерние блоки по центру */
+}
+
+.header-nav {
+  margin-left: auto; /* автоматический внешний отступ слева */
+}
+
+.header-list {
+  display: flex; /* Flexbox  */
+}
+
+.header-item {
+  margin-right: 30px; /* внешний отступ справа */
+}
+
+.heder-button {
+  color: #2766ae;
+  background: #fff;
+  border-radius: 100px;
+  padding: 14px 30px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* ================================================================================================ */
+
+/* .hero-img {
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+} */
+
+/* ================================================================================================ */
+
+.hero {
+  padding: 120px 0;
+  background: url("../img/background_1.jpg") 10% 50% / cover no-repeat;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  max-width: 436px;
+}
+
+.hero-text p {
+  margin-top: 15px;
+}
+
+.hero-text p:first-child {
+  margin-top: 0px;
+}
+
+.hero-text a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #01a2cb;
+}
+
+.hero-button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+}
+
+.hero-button-one,
+.hero-button-two {
+  border-radius: 100px;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-button-one img,
+.hero-button-two img {
+  margin-left: 4px;
+}
+
+.hero-button-one {
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+}
+
+.hero-button-two {
+  background: linear-gradient(95deg, #00a4cc 6.7%, #2766ae 91.35%);
+}
+
+/* Дополнительный нижний отступ в 10px */
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+/* ================================================================================================ */
+
+.cards {
+  padding: 120px 0;
+}
+
+.title-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 513px;
+  margin: 0 auto;
+}
+
+.cards-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.title-inner p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cards-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 60px 0 2px;
+}
+
+.cards-flex-item {
+  margin-bottom: 28px;
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 204px;
+  background: #197cb8;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 13px 0px rgba(11, 15, 30, 0.79);
+}
+
+.cards-flex-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.cards-flex-item p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-button-one {
+  display: block; /* Блочный элемент */
+  max-width: 436px; /* Максимальный размер */
+  margin: 0 auto; /* Центр */
+  text-align: center; /* Текст внутри кнопки по центру */
+  border-radius: 100px;
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  padding: 18px 30px;
+}
+
+/* Отменяем левый отступ */
+.margin-left {
+  margin-left: 0px;
+}
+
+/* ================================================================================================ */
+
+.footer {
+  border-top: 1px solid #323952;
+  padding: 60px 0;
+}
+
+.footer-inner {
+  display: flex;
+}
+
+.footer-desc {
+  max-width: 267px;
+  margin-right: auto;
+}
+
+.footer-desc a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-column {
+  max-width: 204px;
+  width: 100%;
+}
+
+.footer-col-margin {
+  margin-right: 28px;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
