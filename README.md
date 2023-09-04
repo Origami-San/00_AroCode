@@ -40,3 +40,9 @@
 
 > Lesson 36:
 > Домашнее задание по применению общих свойств CSS [Link](/00_AroCode/lesson 36/index.html)
+
+> Lesson 37-42:
+> Обзорные уроки по основным CSS свойствам, знакомство с Flexbox
+
+> Lesson 43:
+> Верстка учебного макета [Link](/00_AroCode/lesson 43/index.html)
