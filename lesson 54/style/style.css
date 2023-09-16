@@ -1,0 +1,44 @@
+body {
+  background: #262628;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+section {
+  height: 1000px;
+}
+
+.rectangle {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  min-height: 100px;
+  width: 50%;
+  border-radius: 10px 10px 10px 10px;
+  background: #ede6e5;
+}
+
+.circle {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.rectangle__indent-right {
+  font-size: 12px;
+  position: absolute;
+  bottom: 35%;
+  right: -40px;
+}
+
+.rectangle__indent-bottom {
+  font-size: 12px;
+  position: absolute;
+  bottom: -65px;
+  right: 50%;
+}
