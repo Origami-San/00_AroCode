@@ -67,3 +67,6 @@
 
 > Lesson 57
 > Отработка псевдоблоков и псевдоэлементов [Link](/00_AroCode/lesson 57/index.html)
+
+> Lesson 58
+> Отработка плавного перехода [Link](/00_AroCode/lesson 58/index.html)
