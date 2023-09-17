@@ -23,10 +23,40 @@ body {
 
 .title::before {
   background: red;
-  margin-right: 20px;
+  margin-right: 110px;
 }
 
 .title::after {
   background: blue;
-  margin-left: 20px;
+  margin-left: 110px;
+}
+
+/* ================ */
+
+.title2 {
+  margin-top: 50px;
+  position: relative;
+}
+
+.title2::before,
+.title2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title2::before {
+  background: red;
+  left: -150px;
+}
+
+.title2::after {
+  background: blue;
+  right: -150px;
 }
