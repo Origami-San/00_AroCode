@@ -76,3 +76,9 @@
 
 > Lesson 68-73
 > Верстка учебного макета [Link](/00_AroCode/lesson 69/index.html)
+
+> Lesson 74-91
+> Основы JavaScript
+
+> Lesson 92
+> Реализация модального окна на JavaScript [Link](/00_AroCode/lesson 92/index.html)
