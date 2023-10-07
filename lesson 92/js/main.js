@@ -12,7 +12,11 @@ const closeModals = () => {
   body.classList.remove("body--fixed");
 };
 
-openBtn.addEventListener("click", openModals);
+// openBtn.addEventListener("click", openModals);
+
+openBtn.addEventListener("click", () => {
+  openModals();
+});
 
 modalWindow.addEventListener("click", (event) => {
   if (
