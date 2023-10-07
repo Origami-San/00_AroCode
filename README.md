@@ -82,3 +82,6 @@
 
 > Lesson 92
 > Реализация модального окна на JavaScript [Link](/00_AroCode/lesson 92/index.html)
+
+> Lesson 94-100
+> Верстка шапки финального макета [Link](/00_AroCode/lesson 94/index.html)
