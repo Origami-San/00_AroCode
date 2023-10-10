@@ -14,6 +14,10 @@ body {
   color: var(--general-text); /* цвет шрифта */
 }
 
+.body--opened-menu {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%; /* высота на всю высоту родителя body */
   width: 100%; /* контен не более ширины родителя body */
@@ -89,6 +93,10 @@ body {
   padding-top: 20px;
 }
 
+.logo {
+  z-index: 11;
+}
+
 .logo img {
   max-height: 60px;
 }
@@ -99,7 +107,7 @@ body {
 
 .nav__list {
   display: flex;
-  gap: 40px;
+  gap: 5vh 40px;
 }
 
 .nav__item {
@@ -128,6 +136,57 @@ body {
 
 .nav__link:hover::before {
   opacity: 1;
+}
+
+.burger-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+}
+
+.burger-icon span {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: var(--general-text);
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: var(--general-text);
+  transition: all 0.5s;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  top: 8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: -0px;
+  transform: rotate(-45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  top: 0px;
+  transform: rotate(45deg);
 }
 
 /* ==========================Hero=============================== */
@@ -242,4 +301,36 @@ body {
 
 .hero_play-btn:hover::before {
   opacity: 1;
+}
+
+/* ==========================Media=============================== */
+
+@media (max-width: 900px) {
+  .nav__list {
+    position: fixed;
+    inset: 0;
+    background: var(--general-bg);
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh 15px 30px;
+    font-size: 25px;
+
+    transform: translateY(-90%);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.5s;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .body--opened-menu .nav__list {
+    display: flex;
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+  }
 }
