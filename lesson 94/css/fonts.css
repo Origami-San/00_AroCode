@@ -1,5 +1,15 @@
 @font-face {
   font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../fonts/Montserrat-Light.woff2") format("woff2"),
+    url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/Montserrat-Regular.woff2") format("woff2"),
     url("../fonts/Montserrat-Regular.woff") format("woff");
