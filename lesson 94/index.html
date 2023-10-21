@@ -50,7 +50,9 @@
                   <span>Старт</span>
                   <span>26.06.2023</span>
                 </div>
-                <h1 class="hero_title">Научись печь торты и десерты с нуля</h1>
+                <h1 class="title hero_title">
+                  Научись печь торты и десерты с нуля
+                </h1>
                 <p class="hero__text">
                   За 8 практических занятий ты получишь новые возможности
                   для самореализации и любимое дело
@@ -87,7 +89,60 @@
         </div>
       </header>
       <main class="main">
-        <section>Main</section>
+        <section class="team">
+          <div class="container">
+            <div class="team__items">
+              <div class="team__item-img">
+                <img src="img/content/gerl2.jpg" alt="Teams" />
+                <div class="team__gift">
+                  <a class="team__gift-btn" href="#">
+                    <img src="img/icons/gift.svg" alt="Gift" />
+                  </a>
+                  <p>Нажми на подарок, чтобы получить наш фирменный рецепт</p>
+                </div>
+              </div>
+              <div class="team__item-content">
+                <div class="team__item-title">
+                  <h2 class="title team__title">Наша школа —</h2>
+                  <span></span>
+                  <p class="slogan">это уютный дом для начинающих кондитеров</p>
+                  <p class="team__item-text">
+                    С нами ты погрузишься в удивительный мир кондитерского
+                    искусства, получишь новые знания и профессиональные навыки!
+                    Обретёшь веру в свои силы, научишься приготовлению
+                    разнообразных современных и классических десертов
+                  </p>
+                </div>
+              </div>
+              <div class="team___item-info">
+                <div class="team__box">
+                  <div class="team__box-img">
+                    <img src="img/icons/cap.svg" alt="" />
+                  </div>
+                  <p>Живое общение с наставниками и одногруппниками</p>
+                </div>
+                <div class="team__box">
+                  <div class="team__box-img">
+                    <img src="img/icons/cap.svg" alt="" />
+                  </div>
+                  <p>Предоставление всех необходимых материалов</p>
+                </div>
+                <div class="team__box">
+                  <div class="team__box-img">
+                    <img src="img/icons/cap.svg" alt="" />
+                  </div>
+                  <p>Небольшие группы до 6 человек</p>
+                </div>
+                <div class="team__box">
+                  <div class="team__box-img">
+                    <img src="img/icons/cap.svg" alt="" />
+                  </div>
+                  <p>Большие аудитории для обучения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__inner">
@@ -257,6 +312,57 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="modal">
+      <div class="modal__window">
+        <div class="modal__close">
+          <svg
+            class="modal__close-btn"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.75781 17.2433L12.0008 12.0003L17.2438 17.2433M17.2438 6.75732L11.9998 12.0003L6.75781 6.75732"
+              stroke="#E1D9E1"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="0.75"
+              y="0.75"
+              width="22.5"
+              height="22.5"
+              rx="11.25"
+              stroke="#E1D9E1"
+              stroke-width="1.5"
+            />
+          </svg>
+        </div>
+
+        <img src="img/decor/cupcakes2.png" alt="Cupcakes" />
+
+        <div class="modal__items">
+          <h3 class="modal__title">Удиви своих близких вкусными капкейками</h3>
+          <p class="modal__text">
+            Оставь свой e-mail, и мы вышлем рецепт на почту
+          </p>
+          <form class="contact-form">
+            <label class="field">
+              <input class="field_input" type="email" placeholder="E-mail" />
+              <span>Введите e-mail</span>
+            </label>
+
+            <button class="button modal__button" type="submit">
+              Получить подарок
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="js/fslightbox.js"></script>
     <script src="js/mail.js"></script>
