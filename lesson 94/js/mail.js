@@ -23,19 +23,34 @@ nav.addEventListener("click", (event) => {
 const openModalBtn = document.querySelector(".team__gift-btn");
 const modalWindow = document.querySelector(".modal");
 
-openModalBtn.addEventListener("click", (event) => {
+// Modal Window / Оптимизируем повторяющиеся строки открытия и закрытия, создаем переменные
+
+const openModals = () => {
   modalWindow.classList.add("modal--open");
   body.classList.add("body--fixed");
+};
+
+const closeModals = () => {
+  modalWindow.classList.remove("modal--open");
+  body.classList.remove("body--fixed");
+};
+
+// Modal Window / Оптимизированный код открытия и сбрасываем дефолтное поведение
+
+openModalBtn.addEventListener("click", (event) => {
+  openModals();
   event.preventDefault();
 });
 
+// Modal Window / Оптимизированный код закрытия если event.target = true и click на modal или modal__close-btn то закрываем модальное окно
+
 modalWindow.addEventListener("click", (event) => {
   if (
-    (event.target && event.target.classList.contains("modal")) ||
-    (event.target && event.target.classList.contains("modal__close-btn"))
+    event.target &&
+    (event.target.classList.contains("modal") ||
+      event.target.classList.contains("modal__close-btn"))
   ) {
-    modalWindow.classList.remove("modal--open");
-    body.classList.remove("body--fixed");
+    closeModals();
   }
 });
 
@@ -44,7 +59,6 @@ document.addEventListener("keydown", (event) => {
     event.code === "Escape" &&
     modalWindow.classList.contains("modal--open")
   ) {
-    modalWindow.classList.remove("modal--open");
-    body.classList.remove("body--fixed");
+    closeModals();
   }
 });
