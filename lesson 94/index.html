@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wake & Bake</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="body">
@@ -592,6 +591,89 @@
             </div>
           </div>
         </section>
+        <section class="main__gallery gallery">
+          <div class="container">
+            <div class="gallery__items">
+              <div class="gallery_img-inner">
+                <div class="gallery_img">
+                  <img src="img/decor/cupcakes.png" alt="Cupcakes" />
+                </div>
+              </div>
+              <div class="gallery_item">
+                <h2 class="gallery_item-title title">Фотогалерея</h2>
+                <p class="gallery_item-text">
+                  Для комфортного обучения сделаны просторные аудитории, где предоставляется всё необходимое оборудование. Здесь наши ученики создают
+                  кулинарные шедевры под присмотром опытных наставников
+                </p>
+              </div>
+
+              <div class="gallery__tab">
+                <button class="gallery__prev" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.99151 1.0234L2.01551 6.9994L7.99151 12.9754L6.98351 13.9834L-0.000488975 6.9994L6.98351 0.0153972L7.99151 1.0234Z"
+                      fill="#FFA55C"
+                    />
+                    <path d="M1.00781 7.71875L1.00781 6.27875L13.2478 6.27875L13.2478 7.71875L1.00781 7.71875Z" fill="#FFA55C" />
+                  </svg>
+                </button>
+                <div class="gallery__tab-pagination"></div>
+                <button class="gallery__next" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.25653 12.96L11.2325 6.984L5.25654 1.008L6.26454 -3.0528e-07L13.2485 6.984L6.26454 13.968L5.25653 12.96Z"
+                      fill="#FFA55C"
+                    />
+                    <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery_swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="gallery__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+                <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallary/1.jpg">
+                  <img src="img/content/gallary/1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__inner">
@@ -744,6 +826,7 @@
       </div>
     </div>
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/mail.js"></script>
   </body>
 </html>

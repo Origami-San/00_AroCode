@@ -1,0 +1,75 @@
+:root {
+  --general-text: #312c27;
+  --accent-text: #1f1711;
+  --general-bg: #fff9f4;
+  --accent-bg: #ffe0cb;
+  --accent-color: #ffa55c;
+  --copyright-color: #dec5b1;
+  --transition-all: all 0.5s;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background: var(--general-bg); /* цвет фона */
+  /* font-size: 16px; */
+  line-height: 1.5; /* 16px*1.5=24px */
+  color: var(--general-text); /* цвет шрифта */
+}
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%; /* высота на всю высоту родителя body */
+  width: 100%; /* контен не более ширины родителя body */
+  overflow: hidden; /* скрываем все, что выходит за элементы контейнера для избавления от вертикального scrollbar */
+  display: flex; /* делаем header main footer элементами flexbox  */
+  flex-direction: column; /* структура flexbox - колонки */
+}
+
+.main {
+  flex-grow: 1; /* расталкиваем шапка и подвал к краям */
+}
+
+.container {
+  max-width: 1310px; /* ширина контейнера + отступы слева 15px и справа 15px */
+  margin: 0 auto; /* контейнер по центру */
+  padding: 0 15px; /* отступы от окна браузера */
+  height: 100%; /* высота 100% высоты родителя */
+}
+
+/* ==========================Button=============================== */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 308px;
+  width: 100%;
+
+  padding: 3px 15px;
+  height: 62px;
+  border-radius: 100px;
+  background: var(--accent-color);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #ff9138;
+}
+
+/* ==========================Title=============================== */
+
+.title {
+  font-family: "Gabriola", "Arial", serif;
+  font-size: 74px;
+  line-height: 0.82;
+  color: var(--accent-text);
+}

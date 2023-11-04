@@ -132,4 +132,37 @@
       }
     });
   });
+
+  // Sliders
+  const swiper = new Swiper(".swiper", {
+    // loop: true,
+    slidesPerView: 1.5, // Количество слайдов на странице
+    spaceBetween: 15, // Расстояние между слайдами
+
+    pagination: {
+      el: ".gallery__tab-pagination",
+      type: "fraction",
+    },
+
+    navigation: {
+      nextEl: ".gallery__next",
+      prevEl: ".gallery__prev",
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 800px
+      601: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 800px
+      801: {
+        spaceBetween: 32,
+      },
+      // when window width is >= 1101px
+      1101: {
+        slidesPerView: 4,
+      },
+    },
+  });
 })();
