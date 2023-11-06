@@ -209,9 +209,6 @@
   max-width: 624px;
 }
 
-.team__item-content h2 {
-}
-
 .team__item-content .slogan {
   margin-bottom: 30px;
 }
@@ -258,11 +255,6 @@
 
 .program__title {
   margin-bottom: 20px;
-}
-
-.program__inner {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
 }
 
 .program__top {
@@ -406,9 +398,6 @@
   gap: 80px;
 }
 
-.accordion-content__col {
-}
-
 .accordion-content__col:first-child {
   max-width: 507px;
   width: 100%;
@@ -510,9 +499,6 @@
   text-align: end;
 }
 
-.price__item-one {
-}
-
 .price__item-two {
   display: flex;
   flex-direction: column;
@@ -549,9 +535,6 @@
 
 .price__button {
   max-width: none;
-}
-
-.price__img {
 }
 
 .price__img img {
@@ -619,6 +602,7 @@
 
 .field {
   position: relative;
+  display: block; /* Делаем блок, чтобы текст был в одну линию */
 }
 
 .field span {
@@ -641,12 +625,10 @@
   line-height: 1.5;
   width: 100%;
   transition: all 0.9s;
-  display: block;
 }
 
-.field_input:focus {
+.field_input:hover {
   border-color: #ffa55c;
-  padding: 26px 28px 10px 28px;
 }
 
 .field_input:focus + span {
@@ -657,6 +639,10 @@
 .field_input::placeholder {
   color: #ac907a;
   transition: all 0.3s;
+}
+
+.field_input:focus {
+  padding: 26px 28px 10px 28px;
 }
 
 .field_input:focus::placeholder {
@@ -684,9 +670,6 @@
 .modal__close-btn:hover path,
 .modal__close-btn:hover rect {
   stroke: var(--accent-color);
-}
-
-.modal__close-btn:hover::before {
 }
 
 /* Скрываем полосу прокрутки для открытого окна */
@@ -965,12 +948,6 @@
   color: #ceaad0;
 }
 
-.testimonials__instagram img {
-}
-
-.testimonials__instagram-name {
-}
-
 .testimonials__text-inner {
   /* max-width: 369px; */
   /* max-height: 260px; */
@@ -986,7 +963,146 @@
   margin-bottom: 10px;
 }
 
-.testimonials__text {
+/* ==========================Contacts=============================== */
+
+.main__contact {
+  padding: 140px 0;
+  background: url("../img/decor/background2.png") 50% 0% / cover no-repeat;
+}
+.contact__inner {
+  display: flex;
+  align-items: end;
+  gap: 84px;
+  position: relative;
+}
+
+.contact__inner::before {
+  content: url("../img/decor/berries.png");
+  position: absolute;
+  top: -5%;
+  left: 0;
+}
+
+.contact__inner::after {
+  content: url("../img/decor/berries2.png");
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.contact__img img {
+  width: 100%; /* Изображение по размеру контейнера */
+  filter: box-shadow(0px 4px 30px 0px rgba(198, 176, 161, 0.3)); /* Тень подстраивается под границы элемента */
+}
+.contact__item {
+  max-width: 420px;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+.contact__text {
+  margin-bottom: 40px;
+}
+
+.contact__form-lable {
+  margin-bottom: 10px;
+}
+.contact_input {
+  display: block;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #ac907a;
+  padding: 18px 28px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  transition: all 0.9s;
+}
+.contact_input:hover {
+  border-color: #ffa55c;
+}
+.contact_input::placeholder {
+  color: #ac907a;
+}
+.contact_input:focus::placeholder {
+  color: #ffa55c;
+}
+.contact__checkbox-lable {
+  /* display: block; Делаем элемент блочным, для работы отступов */
+  margin: 20px 0;
+  display: flex;
+  gap: 5px;
+  align-items: start;
+}
+
+input::-webkit-input-placeholder {
+  line-height: 20px;
+  transition: line-height 0.5s ease;
+}
+
+/* ==========================Contacts Checkbox=============================== */
+
+.contact__checkbox {
+  appearance: none; /* Скрываем стандартный чекбокс */
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ac907a;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+
+  transition: all 0.5s;
+}
+
+.contact__checkbox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/icons/check.svg") 50% 50% no-repeat;
+  opacity: 0;
+
+  transition: all 0.5s;
+}
+
+.contact__checkbox:hover {
+  border: 2px solid #ffa55c;
+}
+
+.contact__checkbox:checked {
+  border: 2px solid #ffa55c;
+  background: #ffa55c;
+}
+
+.contact__checkbox:checked::before {
+  opacity: 1;
+}
+
+/* ==========================Contacts Text=============================== */
+
+.contact__checkbox-text {
+  /* display: inline; */
+  font-size: 13px;
+}
+.contact__checkbox-text a {
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+
+.contact__checkbox-text:hover a {
+  color: var(--accent-color);
+}
+
+.contact__decoration-img {
+  margin: 0 auto 0;
+}
+.contact__decoration-img img {
+  margin-top: 38px;
+}
+
+.contact__button {
+  max-width: none;
 }
 
 /* ==========================Media=============================== */
@@ -1032,6 +1148,10 @@
   .program__item {
     flex-wrap: wrap;
   }
+
+  .contact__inner::after {
+    top: -18%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1053,6 +1173,18 @@
 
   .accordion-content {
     gap: 40px;
+  }
+
+  .contact__inner {
+    align-items: center;
+  }
+
+  .contact__inner::before {
+    top: -12%;
+  }
+
+  .contact__inner {
+    gap: 30px;
   }
 }
 
@@ -1135,6 +1267,14 @@
     width: 50%;
     margin: 0 auto;
   }
+
+  .contact__img {
+    display: none;
+  }
+
+  .contact__inner {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1207,6 +1347,10 @@
   .testimonials_titile-inner {
     max-width: none;
   }
+
+  .contact__inner::before {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1275,10 +1419,6 @@
 
   .modal__title {
     font-size: 35px;
-  }
-
-  .modal__items {
-    /* text-align: center; */
   }
 
   .modal__close-btn {
@@ -1389,6 +1529,14 @@
   .testimonials_main {
     margin-top: 20px;
   }
+
+  .contact__item {
+    text-align: center;
+  }
+
+  .contact__checkbox-text {
+    text-align: left;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1410,7 +1558,8 @@
   }
 
   .gallery_item-title,
-  .testimonials_titile {
+  .testimonials_titile,
+  .contact__title {
     font-size: 14vw;
     text-align: center;
   }
@@ -1420,6 +1569,9 @@
   }
 
   .main__gallery {
+    padding-bottom: 80px;
+  }
+  .main__contact {
     padding-bottom: 80px;
   }
 }

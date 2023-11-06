@@ -108,7 +108,8 @@
 
       // Если клик НЕ по кнопке .accordion__list-btn, то не выполняем код
       if (!accordionControl) return;
-
+      // Отменяем дефолтное поведение для ссылок при клике
+      e.preventDefault();
       // Задаем переменную для родителя кнопки .accordion__list-btn которым является accordion__list. Т.е. при клике на кнопку, выбирается родитель кнопки
       const accordionItem = accordionControl.parentElement;
       // Задаем переменную для следующего элемента после .accordion__list-btn которым является accordion-list__content. Т.е. при клике на кнопку, выбирается следующий элемент после кнопки
@@ -200,4 +201,9 @@
       },
     },
   });
+
+  // Input Mask Tel
+  const inputs = document.querySelectorAll('input[type="tel"]');
+  const im = new Inputmask("+7 (999) 999-99-99");
+  im.mask(inputs);
 })();

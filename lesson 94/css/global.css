@@ -8,6 +8,11 @@
   --transition-all: all 0.5s;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vh;
+}
+
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   background: var(--general-bg); /* цвет фона */

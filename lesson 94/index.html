@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="body">
+    <!-- General Wrapper -->
     <div class="wrapper">
+      <!-- Header-->
       <header class="header">
         <img class="header__bg" src="img/decor/background1.png" alt="backdrop" />
         <!-- container прописан после тега header т.к. весь контент внутри в контентной зоне -->
         <div class="container">
           <!-- header__top используется в качестве контейнера для логотипа и анимации-->
           <div class="header__top">
-            <a class="logo" href="#"><img src="img/icons/logos/Logo_dark.svg" alt="Logo Wake & Bake" /></a>
+            <a class="logo" href="/"><img src="img/icons/logos/Logo_dark.svg" alt="Logo Wake & Bake" /></a>
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Программа обучения</a>
+                  <a class="nav__link" href="#program">Программа обучения</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Галерея</a>
+                  <a class="nav__link" href="#gallery">Галерея</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Отзывы</a>
+                  <a class="nav__link" href="#testimonials">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Контакты</a>
+                  <a class="nav__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -50,7 +52,7 @@
                   Посмотри, как готовятся наши торты
                 </div>
                 <div class="hero__button">
-                  <a class="button hero__button-width" href="">Записаться на курс</a>
+                  <a class="button hero__button-width" href="#contacts">Записаться на курс</a>
                 </div>
               </div>
               <div class="hero_img">
@@ -64,8 +66,10 @@
           </section>
         </div>
       </header>
+      <!-- Main -->
       <main class="main">
-        <section class="team">
+        <!-- Team -->
+        <section class="main__team team">
           <div class="container">
             <div class="team__items">
               <div class="team__item-img">
@@ -117,7 +121,8 @@
             </div>
           </div>
         </section>
-        <section class="program">
+        <!-- Program -->
+        <section class="main__program program" id="program">
           <div class="container">
             <h2 class="title program__title">Программа обучения</h2>
             <div class="program__inner">
@@ -143,7 +148,7 @@
               <div class="program__tab tab--active" id="tab1">
                 <ul class="accordion">
                   <li class="accordion__list">
-                    <button class="accordion__list-btn" type="button">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Начало кондитерского пути и создание первого торта</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,7 +159,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -200,7 +205,7 @@
                     </div>
                   </li>
                   <li class="accordion__list">
-                    <button class="accordion__list-btn">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Медовик и капкейки</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +216,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -257,7 +262,7 @@
               <div class="program__tab" id="tab2">
                 <ul class="accordion">
                   <li class="accordion__list">
-                    <button class="accordion__list-btn" type="button">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Песочное тесто и чизкейк</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,7 +273,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -316,7 +321,7 @@
                     </div>
                   </li>
                   <li class="accordion__list">
-                    <button class="accordion__list-btn">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Бисквиты</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +332,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -371,7 +376,7 @@
               <div class="program__tab" id="tab3">
                 <ul class="accordion">
                   <li class="accordion__list">
-                    <button class="accordion__list-btn" type="button">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Дрожжевое тесто</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -382,7 +387,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -416,7 +421,7 @@
                     </div>
                   </li>
                   <li class="accordion__list">
-                    <button class="accordion__list-btn">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Работа с кремами</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -427,7 +432,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -468,7 +473,7 @@
               <div class="program__tab" id="tab4">
                 <ul class="accordion">
                   <li class="accordion__list">
-                    <button class="accordion__list-btn" type="button">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Mille-feuille, или Наполеон</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -479,7 +484,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -516,7 +521,7 @@
                     </div>
                   </li>
                   <li class="accordion__list">
-                    <button class="accordion__list-btn">
+                    <a class="accordion__list-btn" href="#">
                       <h3 class="accordion-title">Завершение курса</h3>
                       <div class="accordion__arrow-inner">
                         <svg class="accordion__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -527,7 +532,7 @@
                           <path d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z" fill="#FFA55C" />
                         </svg>
                       </div>
-                    </button>
+                    </a>
                     <div class="accordion-list__content">
                       <div class="accordion-content">
                         <div class="accordion-content__col">
@@ -584,14 +589,15 @@
                     <p class="price__item-title">Стоимость курса со скидкой</p>
                     <p class="price__second">22 400 руб.</p>
                   </div>
-                  <div class="price__button-inner"><a class="button price__button" href="">Оставить заявку</a></div>
+                  <div class="price__button-inner"><a class="button price__button" href="#contacts">Оставить заявку</a></div>
                 </div>
                 <div class="price__img"><img src="img/decor/cake.png" alt="cake" /></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="main__gallery gallery">
+        <!-- Gallery -->
+        <section class="main__gallery gallery" id="gallery">
           <div class="container">
             <div class="gallery__items">
               <div class="gallery_img-inner">
@@ -660,7 +666,8 @@
             </div>
           </div>
         </section>
-        <section class="testimonials">
+        <!-- Testimonials -->
+        <section class="main__testimonial testimonials" id="testimonials">
           <div class="container">
             <div class="testimonials_top">
               <div class="testimonials_titile-inner">
@@ -794,13 +801,46 @@
             </div>
           </div>
         </section>
+        <!-- Contacts -->
+        <section class="main__contact contact" id="contacts">
+          <div class="container">
+            <div class="contact__inner">
+              <div class="contact__img">
+                <img src="img/decor/cake2.png" alt="" />
+              </div>
+              <div class="contact__item">
+                <h2 class="contact__title title">Оставить заявку на обучение</h2>
+                <p class="contact__text">Заполни контактные данные, и наш менеджер свяжется с тобой в ближайшее время</p>
+                <form class="contact__form">
+                  <label class="contact__form-lable field">
+                    <input class="field_input" type="text" placeholder="Имя" />
+                    <span>Введите имя</span>
+                  </label>
+                  <input class="contact_input" type="tel" name="tel" data-validate-field="tel" placeholder="+7 (___) ___-__-__" />
+                  <label class="contact__checkbox-lable">
+                    <input class="contact__checkbox" type="checkbox" />
+                    <span class="contact__checkbox-text">
+                      Нажимая на кнопку, вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>
+                    </span>
+                  </label>
+
+                  <button class="contact__button button" type="submit">Записаться на курс</button>
+                </form>
+              </div>
+              <!-- <div class="contact__decoration-img">
+                <img src="img/decor/berries2.png" alt="" />
+              </div> -->
+            </div>
+          </div>
+        </section>
       </main>
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer__inner">
           <div class="container">
             <div class="footer__items">
               <div class="footer__item footer__logo">
-                <a class="logo logo__footer" href="#"><img src="img/icons/logos/Logo_light.svg" alt="Logo Wake & Bake" /></a>
+                <a class="logo logo__footer" href="/"><img src="img/icons/logos/Logo_light.svg" alt="Logo Wake & Bake" /></a>
                 <p class="slogan slogan__footer">Школа кондитерского искусства</p>
                 <address class="social social__footer">
                   <ul class="social__items">
@@ -854,10 +894,10 @@
               <div class="footer__item">
                 <ul class="footer__menu">
                   <li class="footer__menu-item">
-                    <a href="#">Программа обучения</a>
+                    <a href="#program">Программа обучения</a>
                   </li>
-                  <li class="footer__menu-item"><a href="#">Галерея</a></li>
-                  <li class="footer__menu-item"><a href="#">Отзывы</a></li>
+                  <li class="footer__menu-item"><a href="#gallery">Галерея</a></li>
+                  <li class="footer__menu-item"><a href="#testimonials">Отзывы</a></li>
                 </ul>
               </div>
               <address class="footer__item">
@@ -916,7 +956,7 @@
         </div>
       </footer>
     </div>
-
+    <!-- Modal Window -->
     <div class="modal">
       <div class="modal__window">
         <div class="modal__close">
@@ -945,8 +985,10 @@
         </div>
       </div>
     </div>
+    <!-- JavaScript -->
     <script src="js/fslightbox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/mail.js"></script>
   </body>
 </html>
