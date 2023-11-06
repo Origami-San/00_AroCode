@@ -134,7 +134,7 @@
   });
 
   // Sliders
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".gallery_swiper", {
     // loop: true,
     slidesPerView: 1.5, // Количество слайдов на странице
     spaceBetween: 15, // Расстояние между слайдами
@@ -162,6 +162,41 @@
       // when window width is >= 1101px
       1101: {
         slidesPerView: 4,
+      },
+    },
+  });
+
+  // Sliders-testimonials
+  new Swiper(".testimonials__swiper", {
+    // loop: true,
+    slidesPerView: 1, // Количество слайдов на странице
+    spaceBetween: 0, // Расстояние между слайдами
+    centeredSlides: true,
+
+    navigation: {
+      nextEl: ".testimonials__next",
+      prevEl: ".testimonials__prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 450px
+      450: {
+        slidesPerView: 1.1,
+      },
+      // when window width is >= 900px
+      901: {
+        slidesPerView: 1.5,
+      },
+      // when window width is >= 1200px
+      1201: {
+        slidesPerView: 2.1,
       },
     },
   });
