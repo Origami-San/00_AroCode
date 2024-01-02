@@ -1023,6 +1023,7 @@
 }
 .contact_input::placeholder {
   color: #ac907a;
+  transition: all 0.9s;
 }
 .contact_input:focus::placeholder {
   color: #ffa55c;
@@ -1033,11 +1034,6 @@
   display: flex;
   gap: 5px;
   align-items: start;
-}
-
-input::-webkit-input-placeholder {
-  line-height: 20px;
-  transition: line-height 0.5s ease;
 }
 
 /* ==========================Contacts Checkbox=============================== */
