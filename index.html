@@ -117,7 +117,7 @@
                   />
                 </svg>
 
-                <span>Update Templatee</span>
+                <span>Update Template</span>
               </button>
             </div>
           </div>
@@ -296,56 +296,89 @@
           </div>
           <div class="content__block hidden" id="updateBlock">
             <div class="content__title">Update Template</div>
-            <div class="content__list-update">
-              <h2>Update 1</h2>
-              <p>Обновление языка в DOCTYPE</p>
-              <pre
-                class="html5"
-                style="font-family: monospace"
-              ><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span> <span style="color: #000066;">lang</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;ru&quot;</span>&gt;</span></pre>
-            </div>
-            <div class="content__list-update">
-              <h2>Update 2</h2>
-              <p>Добавление 100% ширины для .content__block</p>
-              <pre class="css" style="font-family: monospace">
-<span style="color: #6666ff;">.content__block</span> <span style="color: #00AA00;">&#123;</span>
-  <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">100%</span><span style="color: #00AA00;">;</span>
-<span style="color: #00AA00;">&#125;</span></pre>
-            </div>
-            <div class="content__list-update">
-              <h2>Update 3</h2>
-              <div>
-                <p>Добавление минимальной ширины блока и центрирование текста для .content__list-item</p>
-                <pre class="css" style="font-family: monospace">
-<span style="color: #6666ff;">.content__list-item</span> <span style="color: #00AA00;">&#123;</span>
-  <span style="color: #000000; font-weight: bold;">min-width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">138px</span><span style="color: #00AA00;">;</span>
-  <span style="color: #000000; font-weight: bold;">text-align</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">center</span><span style="color: #00AA00;">;</span>
-<span style="color: #00AA00;">&#125;</span></pre>
-              </div>
-            </div>
-            <div class="content__list-update">
-              <h2>Update 4</h2>
-              <div>
-                <p>
-                  Добавление всплывающей подсказки с описанием для каждого задания. Корректировка стиля .content__list-info. Добавление стиля
-                  .content__list-info; .info
-                </p>
-                <pre class="html5" style="font-family: monospace">
+            <ul class="accordion">
+              <!-- ! -->
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 6</h3>
+                    <p class="accordion-desc">Обновление JavaScript</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">Обновление JavaScript для закладок и добавлен скрипт аккордеона</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 5</h3>
+                    <p class="accordion-desc">Добавление закладки UPDATE и дополнительных CSS стилей</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">Добавлена закладка Update Template для ведения журнала изменений</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 4</h3>
+                    <p class="accordion-desc">Добавление всплывающей подсказки с описанием для каждого задания</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">HTML</p>
+                      <pre class="html5" style="font-family: monospace">
 <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;content__list-info&quot;</span>&gt;</span>
   <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;info&quot;</span>&gt;</span>
     <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>Описание домашнего задания<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span>
   <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
 <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span></pre>
-                <p>Корректировка стиля .content__list-info.</p>
-                <pre class="css" style="font-family: monospace">
+                      <p>Корректировка стиля .content__list-info.</p>
+                      <pre class="css" style="font-family: monospace">
 <span style="color: #6666ff;">.content__list-item</span> <span style="color: #00AA00;">&#123;</span>
   <span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
 <span style="color: #00AA00;">&#125;</span></pre>
-                <p>Добавление стиля .content__list-info; .info</p>
-                <pre
-                  class="css"
-                  style="font-family: monospace"
-                ><span style="color: #6666ff;">.content__list-info</span> <span style="color: #00AA00;">&#123;</span>
+                      <p>Добавление стиля .content__list-info; .info</p>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.content__list-info</span> <span style="color: #00AA00;">&#123;</span>
   <span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #9932cc;">calc</span><span style="color: #00AA00;">&#40;</span><span style="color: #933;">100%</span> <span style="color: #00AA00;">+</span> <span style="color: #933;">5px</span><span style="color: #00AA00;">&#41;</span><span style="color: #00AA00;">;</span>
@@ -353,56 +386,128 @@
   <span style="color: #000000; font-weight: bold;">min-width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">138px</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">text-align</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">start</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">font-size</span><span style="color: #00AA00;">:</span> <span style="color: #933;">13px</span><span style="color: #00AA00;">;</span>
-                &nbsp;
+                                        &nbsp;
   <span style="color: #000000; font-weight: bold;">opacity</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">pointer-events</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
-                &nbsp;
+                                        &nbsp;
   <span style="color: #000000; font-weight: bold;">transform</span><span style="color: #00AA00;">:</span> <span style="color: #9932cc;">translate</span><span style="color: #00AA00;">&#40;</span><span style="color: #933;">0%</span><span style="color: #00AA00;">,</span> <span style="color: #933;">10%</span><span style="color: #00AA00;">&#41;</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">transition</span><span style="color: #00AA00;">:</span> all <span style="color: #933;">0.3s</span><span style="color: #00AA00;">;</span>
 <span style="color: #00AA00;">&#125;</span></pre>
-                <pre
-                  class="css"
-                  style="font-family: monospace"
-                ><span style="color: #6666ff;">.content__list-item</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #6666ff;">.content__list-info</span> <span style="color: #00AA00;">&#123;</span>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.content__list-item</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #6666ff;">.content__list-info</span> <span style="color: #00AA00;">&#123;</span>
   <span style="color: #000000; font-weight: bold;">opacity</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">1</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">pointer-events</span><span style="color: #00AA00;">:</span> all<span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">transform</span><span style="color: #00AA00;">:</span> <span style="color: #9932cc;">translate</span><span style="color: #00AA00;">&#40;</span><span style="color: #933;">0%</span><span style="color: #00AA00;">,</span> <span style="color: #933;">0%</span><span style="color: #00AA00;">&#41;</span><span style="color: #00AA00;">;</span>
 <span style="color: #00AA00;">&#125;</span></pre>
-                <pre class="css" style="font-family: monospace"><span style="color: #6666ff;">.info</span> <span style="color: #00AA00;">&#123;</span>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.info</span> <span style="color: #00AA00;">&#123;</span>
   <span style="color: #000000; font-weight: bold;">padding</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">10px</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">background-color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#daf765</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">border</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1px</span> <span style="color: #993333;">solid</span> <span style="color: #cc00cc;">#dadec9</span><span style="color: #00AA00;">;</span>
 <span style="color: #00AA00;">&#125;</span></pre>
-                <pre
-                  class="css"
-                  style="font-family: monospace"
-                ><span style="color: #6666ff;">.info</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">&#123;</span>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.info</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">&#123;</span>
   <span style="color: #000000; font-weight: bold;">opacity</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
   <span style="color: #000000; font-weight: bold;">pointer-events</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
 <span style="color: #00AA00;">&#125;</span></pre>
-              </div>
-            </div>
-            <div class="content__list-update">
-              <h2>Update 5</h2>
-              <div>
-                <p>Добавление закладки UPDATE и дополнительных CSS стилей</p>
-                <pre class="html5" style="font-family: monospace">
-<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;content__block hidden&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;updateBlock&quot;</span>&gt;</span>
-  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;content__title&quot;</span>&gt;</span>Update<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
-    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;content__list-update&quot;</span>&gt;</span>
-      <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">h2</span>&gt;</span>Заголовок<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">h2</span>&gt;</span>
-      <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>Описание<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span>
-  <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
-<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span></pre>
-              </div>
-            </div>
-            <div class="content__list-update">
-              <h2>Update 6</h2>
-              <div>
-                <p>Обновление JavaScript для закладок</p>
-              </div>
-            </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 3</h3>
+                    <p class="accordion-desc">Добавление минимальной ширины блока и центрирование текста для .content__list-item</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">CSS:</p>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.content__list-item</span> <span style="color: #00AA00;">&#123;</span>
+<span style="color: #000000; font-weight: bold;">min-width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">138px</span><span style="color: #00AA00;">;</span>
+<span style="color: #000000; font-weight: bold;">text-align</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">center</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">&#125;</span></pre>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 2</h3>
+                    <p class="accordion-desc">Добавление 100% ширины для .content__block</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">CSS:</p>
+                      <pre
+                        class="css"
+                        style="font-family: monospace"
+                      ><span style="color: #6666ff;">.content__block</span> <span style="color: #00AA00;">&#123;</span>
+<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">100%</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">&#125;</span></pre>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <a class="accordion__list-btn" href="#!">
+                  <div>
+                    <h3 class="accordion-title">Update 1</h3>
+                    <p class="accordion-desc">Обновление DOCTYPE</p>
+                  </div>
+                  <div class="accordion__arrow-inner">
+                    <svg class="accordion__arrow" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                        fill="#0F0F0F"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <div class="accordion-content">
+                    <div class="accordion-content__col">
+                      <p class="accordion-content__text">HTML:</p>
+                      <pre
+                        style="font-family: monospace"
+                      ><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span>&nbsp;<span style="color: #000066;">lang</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;ru&quot;</span>&gt;</span></pre>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ! -->
+            </ul>
           </div>
         </div>
       </div>
