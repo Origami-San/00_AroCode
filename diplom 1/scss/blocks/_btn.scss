@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Растягиваем на всю ширину родителя*/
+  height: 100%; /* Растягиваем на всю высоту родителя*/
+  padding: 2px 16px; /* Отступ безопасности */
+  background: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.096px;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+  border-radius: 6px;
+  transition: var(--transition-all);
+
+  &:hover {
+    opacity: var(--opacity-all);
+  }
+}

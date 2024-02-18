@@ -1,0 +1,189 @@
+.map {
+  position: absolute;
+  inset: 0;
+  &--desk {
+    @include tablet() {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+    @include tablet() {
+      display: block;
+    }
+  }
+}
+
+.map__overlay {
+  position: absolute;
+  inset: 0;
+  margin: 40px 40px 10px 10px;
+}
+
+.map__item-inner {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  padding: 39px 62px;
+  max-width: 661px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5.578px 13.945px 0px rgba(102, 102, 102, 0.25);
+  z-index: 2;
+
+  &--desk {
+    @include tablet() {
+      display: none;
+    }
+  }
+}
+
+.map__title-inner {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  margin-bottom: 28px;
+
+  &--mobile {
+    height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .map__title {
+    color: var(--text-color);
+    font-family: var(--font-logo);
+    font-size: 22.312px;
+    font-weight: 700;
+    line-height: 23.009px; /* 103.125% */
+    text-transform: uppercase;
+
+    &--mobile {
+      font-size: 11px;
+      line-height: 12px;
+    }
+  }
+}
+
+.map__contact-list {
+  display: grid;
+  gap: 28px;
+
+  &--mobile {
+    gap: 15px;
+  }
+}
+
+.map__contact-item {
+  display: flex;
+  gap: 21px;
+
+  color: var(--text-color);
+  font-family: var(--font-logo-accent);
+  font-size: 19.523px;
+  font-weight: 400;
+  line-height: 27.89px; /* 142.857% */
+
+  &--mobile {
+    gap: 7px;
+    font-size: 10px;
+    line-height: 14px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.map__address {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.map__address-inner {
+  display: flex;
+  gap: 13px;
+}
+
+.map__address-phone {
+  color: var(--text-color);
+  font-family: var(--font-logo-accent);
+  font-size: 22.312px;
+  font-weight: 500;
+  line-height: 27.89px; /* 125% */
+
+  &--mobile {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+.map__address-separator {
+  width: 2px;
+  // height: 28px;
+  background: rgba(157, 163, 168, 0.25);
+}
+.map__address-link {
+  color: var(--text-color);
+
+  font-family: var(--font-logo-accent);
+  font-size: 19.523px;
+  font-weight: 400;
+  line-height: 27.89px; /* 142.857% */
+  text-decoration-line: underline;
+
+  &--mobile {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+// По умолчанию скрываем "Условия использования" и "Zoom" c карты
+[class*="copyrights-pane"],
+[class*="zoom"] {
+  // display: none !important;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+// Показываем "Условия использования" и "Zoom" при наведении на карту
+.map {
+  :hover {
+    [class*="copyrights-pane"],
+    [class*="zoom"] {
+      opacity: 1;
+    }
+  }
+}
+
+// По умолчанию скрываем "Создать свою карту"
+[class*="gototech"] {
+  display: none !important;
+}
+
+// Фильтр цвета на карту
+[class*="ground-pane"] {
+  filter: grayscale(1) sepia(10%);
+}
+
+// mobile
+.map__mobile {
+  display: none;
+  position: absolute;
+  max-width: 320px;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  box-shadow: 0 3px 7px 0 rgba(102, 102, 102, 0.25);
+
+  padding: 20px 35px;
+
+  min-width: 316px;
+
+  @include tablet() {
+    display: block;
+  }
+}

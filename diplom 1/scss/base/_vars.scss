@@ -1,0 +1,81 @@
+:root {
+  // Color
+  --general-bg: #fafafa;
+  --footer-bg: #1f2b38;
+  --tab-bg: #fff;
+  --installation-bg: #6666664d;
+
+  --text-color: #666;
+  --text-logo: #fff;
+  --text-muted: #c9cccf;
+  --text-desc: #757575;
+  --text-assets: #fafafa;
+  --accent: #bb8e34;
+
+  --header-text-color: #fafafa;
+  --footer-text-color: #fff;
+
+  --ui-yellow-gold: #bb8e34;
+  --ui-yellow: #faf39e;
+  --ui-silver: #c9c6c6;
+
+  // Fonts
+  --font-main: "PT Sans Narrow", sans-serif; // Основной шрифт, без засечек (sans-serif) / с засечками (serif)
+  --font-logo: "Roboto Condensed", sans-serif; // Основной для логотипа
+  --font-logo-accent: "Roboto", sans-serif; // Основной для логотипа
+  --general-line-height: 1.25; // Стандартная высота шрифта 16px*1.25=20px
+
+  // Opacity
+  --opacity-all: 0.8;
+  // Transition
+  --transition-all: all 0.5s;
+}
+
+// Mixin Retina Image
+@mixin retina-bg($image) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: $image;
+  }
+}
+
+@mixin desktop-large() {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin desktop-medium() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-small() {
+  @media (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 930px) {
+    @content;
+  }
+}
+
+@mixin tablet-small() {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin mobile-large() {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 375px) {
+    @content;
+  }
+}

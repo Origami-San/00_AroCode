@@ -1,0 +1,40 @@
+// Base
+@import "./base/reset"; // Style reset
+@import "./base/fonts"; // Fonts
+@import "./base/vars"; // Variables
+@import "./base/global"; // Global styles
+// Blocks Global
+@import "./blocks/logo";
+@import "./blocks/btn";
+@import "./blocks/title";
+// Blocks Header
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/slogan";
+@import "./blocks/nav-list";
+@import "./blocks/nav-location";
+@import "./blocks/contacts";
+// Blocks Main
+@import "./blocks/main";
+@import "./blocks/hero";
+@import "./blocks/calculation";
+@import "./blocks/quiz";
+@import "./blocks/installation";
+@import "./blocks/sliders";
+@import "./blocks/slider";
+@import "./blocks/building";
+@import "./blocks/control";
+@import "./blocks/equipment";
+@import "./blocks/guarantee";
+@import "./blocks/order";
+@import "./blocks/vk";
+@import "./blocks/questions";
+@import "./blocks/accordion";
+@import "./blocks/contact";
+@import "./blocks/map";
+// Blocks Footer
+@import "./blocks/footer";
+// Blocks Modals
+@import "./blocks/modal";
+// Blocks Mobile
+@import "./blocks/mobile";

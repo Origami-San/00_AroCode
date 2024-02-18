@@ -1,0 +1,229 @@
+.hero {
+  // Background
+  background-image: url("./../img/bg/background_3.png"); // Фоновое изображение
+  background-size: cover; // Заполнение фонового изображения
+  aspect-ratio: 1280 / 655; // Пропорции фонового изображению
+  // Retina options
+  @include retina-bg(url("./../img/bg/background_3@2x.png"));
+  // Positioning
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 21px;
+  padding-top: 42px;
+  padding-left: 20px;
+  border-radius: 0 0 6px 0;
+
+  @include desktop-small() {
+    aspect-ratio: unset;
+    background-position: 60% 50%;
+    padding-bottom: 20px;
+  }
+
+  @include mobile() {
+    background-position: 69% 50%;
+  }
+}
+
+.hero__shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  z-index: 1;
+  border-radius: 0 0 6px 0;
+
+  @include desktop-small() {
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, rgba(60, 60, 60, 0.41) 38.54%, rgba(34, 34, 34, 0.67) 65.1%, #000 100%);
+  }
+  @include mobile() {
+    border-radius: 0;
+  }
+}
+
+.hero__title {
+  @include desktop-small() {
+    font-size: clamp(14px, 0.616rem + 1.1vw, 22px);
+    line-height: 114%;
+  }
+
+  @include mobile() {
+    max-width: clamp(145px, -2.43rem + 49.03vw, 500px);
+  }
+}
+.hero__slogan {
+  // Size
+  max-width: 661px;
+  margin-bottom: 39px;
+  // Font Options
+  color: var(--accent);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.288px;
+  text-transform: uppercase;
+
+  @include desktop-medium() {
+    margin-bottom: clamp(1px, -13rem + 19vw, 39px);
+    font-size: clamp(24px, 1.112rem + 1.66vw, 36px);
+    line-height: 108%;
+  }
+
+  @include desktop-small() {
+    max-width: clamp(235px, 0.779rem + 58.01vw, 650px);
+  }
+}
+.hero__items {
+  display: flex;
+  gap: 70px;
+
+  @include desktop-small() {
+    flex-direction: column;
+    gap: 17px;
+  }
+}
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  z-index: 2;
+
+  //Font Options
+  font-size: 14px;
+  line-height: 16px; /* 114% */
+  letter-spacing: 0.112px;
+
+  &:first-child img {
+    filter: drop-shadow(0px 3px 2px rgba(102, 102, 102, 0.25));
+  }
+
+  &:last-child p {
+    width: 160px;
+  }
+
+  @include desktop-small() {
+    flex-direction: row;
+    text-align: start;
+
+    p {
+      width: 145px;
+    }
+
+    img {
+      width: 67px;
+      height: 67px;
+    }
+  }
+}
+
+.hero__calc {
+  margin-top: 50px;
+  // Size
+  max-width: 578px;
+  // Font Options
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  z-index: 2;
+
+  font-size: clamp(12px, 0.685rem + 0.28vw, 14px);
+  line-height: 117%;
+
+  span {
+    font-weight: 700;
+  }
+
+  @include desktop-medium() {
+    margin-top: clamp(1px, -15.75rem + 23vw, 47px);
+  }
+
+  @include desktop-small() {
+    font-size: clamp(12px, 0.685rem + 0.28vw, 14px);
+    line-height: 117%;
+    color: #fafafa;
+    max-width: clamp(222px, 2.35rem + 49.17vw, 578px);
+  }
+}
+.hero__btn {
+  height: 48px;
+  width: 207px;
+  z-index: 2;
+
+  .btn {
+    // Font Options
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.112px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25);
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.9);
+    }
+  }
+
+  @include mobile() {
+    width: 262px;
+    margin-inline: auto;
+    padding-right: 15px;
+  }
+}
+.hero__desc {
+  // Positioning
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // Size
+  max-width: 661px;
+  border-radius: 6px;
+  padding: 15px 11px;
+  // Background
+  background-color: var(--general-bg);
+  // Shadow
+  box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25);
+  // Font Options
+  color: var(--text-desc);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.096px;
+
+  p::before {
+    content: "*";
+    position: absolute;
+    left: 6px;
+    top: 13px;
+  }
+
+  &--mobile {
+    margin-top: 15px;
+    display: none;
+    position: relative;
+
+    @include desktop-small() {
+      display: block;
+      max-width: none;
+    }
+
+    @include mobile() {
+      display: block;
+      margin: 15px;
+    }
+  }
+
+  &--desktop {
+    @include desktop-small() {
+      display: none;
+    }
+  }
+}

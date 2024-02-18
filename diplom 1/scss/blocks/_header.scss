@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  // Background
+  background-color: #212c39;
+  background-image: url("./../img/bg/background_1.jpg"); // Фоновое изображение
+  background-size: cover; // Заполнение фонового изображения
+  aspect-ratio: 1920 / 181; // Пропорции фонового изображению
+  // Retina options
+  @include retina-bg(url("./../img/bg/background_1@2x.jpg"));
+  // Padding & Margin
+  padding: 35px 0;
+  // Shadow
+  box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25);
+  max-height: 181px;
+  z-index: 3;
+
+  @include desktop-small() {
+    padding: 23px 0;
+  }
+}
+
+.header__nav {
+  // Positioning
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // Padding & Margin
+  margin-bottom: 20px;
+  padding-left: 86px;
+  padding-right: 53px;
+  // Font Options
+  color: var(--header-text-color);
+  // Pixel Perfect
+  min-height: 24px;
+
+  @include desktop-small() {
+    display: none;
+  }
+}
+
+.header__nav-mobile {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50%;
+  background: linear-gradient(90deg, #425160 0%, rgba(37, 51, 66, 0) 100%);
+  background-color: #1f2b38;
+  pointer-events: none;
+
+  opacity: 0;
+  transition: var(--transition-all);
+
+  &--open {
+    opacity: 1;
+    top: 100%;
+    pointer-events: auto;
+  }
+}
+
+.header__items {
+  // Positioning
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // Padding & Margin
+  padding-right: 53px;
+
+  @include desktop-small() {
+    padding-right: 0;
+    justify-content: normal;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.nav-location {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 5px;
+
+  // Font Options
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.104px;
+
+  // Hover Options
+  transition: var(--transition-all);
+
+  &:hover {
+    opacity: var(--opacity-all);
+  }
+}

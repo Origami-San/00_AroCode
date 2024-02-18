@@ -1,0 +1,120 @@
+.main {
+  // Background
+  background-image: url("./../img/bg/background_2.png"); // Фоновое изображение
+  background-size: auto 30%;
+  // Retina options
+  @include retina-bg(url("./../img/bg/background_2@2x.png"));
+
+  @include desktop-small() {
+    background-size: auto 15%;
+  }
+}
+
+.main__hero {
+  // Padding & Margin
+  padding-bottom: 20px;
+
+  @include mobile() {
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.main__calculation {
+  // Padding & Margin
+  margin-bottom: 20px;
+}
+
+.main__quiz {
+  // Background
+  background-color: var(--general-bg);
+  // Shadow
+  box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25);
+}
+
+.main__installation {
+  // Background
+  background-color: var(--installation-bg);
+}
+
+.main__sliders {
+  // Background
+  background-color: var(--general-bg);
+  // Shadow
+  box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25);
+}
+
+.main__building {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 44px 0;
+}
+
+.main__control {
+  background: #ffffffcc;
+  padding: 21px 0 15px;
+  &--mobile {
+    display: none;
+    @include mobile() {
+      display: block;
+    }
+  }
+  &--desk {
+    @include mobile() {
+      display: none;
+    }
+  }
+}
+
+.main__equipment {
+  // Background
+  background-color: var(--general-bg);
+  // Padding
+  padding: 51px 0 71px;
+  // Shadow
+  box-shadow: 0px 7px 10px 0px rgba(102, 102, 102, 0.25);
+}
+
+.main__guarantee {
+  // Padding
+  padding: 43px 0 38px;
+}
+
+.main__order {
+  // Background
+  background-color: var(--general-bg);
+  // Padding
+  padding: 41px 0 40px;
+  // Shadow
+  box-shadow: 0px 7px 10px 0px rgba(102, 102, 102, 0.25);
+}
+
+.main__vk {
+  // Background
+  background-color: var(--installation-bg);
+  // Padding
+  padding: 39px 0 39px;
+}
+
+.main__questions {
+  // Background
+  background-color: var(--general-bg);
+  // Padding
+  padding: 42px 0 39px;
+  // Shadow
+  box-shadow: 0px 7px 10px 0px rgba(102, 102, 102, 0.25);
+}
+
+.main__contact {
+  // Padding
+  padding: 41px 0 38px;
+}
+
+.main__map {
+  // Display
+  position: relative;
+  // Size
+  height: 680px;
+}

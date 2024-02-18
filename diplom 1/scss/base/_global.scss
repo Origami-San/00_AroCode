@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth; // Плавный scroll
+}
+
+body {
+  font-family: var(--font-main); // Основной шрифт
+  background: var(--general-bg); // Цвет фона
+  line-height: var(--general-line-height); // Высота шрифта
+  color: var(--text-color); // Цвет шрифта
+}
+
+.wrapper {
+  min-height: 100%; // Высота на всю высоту родителя body
+  width: 100%; // Контент не более ширины родителя body
+  overflow: hidden; // Скрываем все, что выходит за элементы контейнера для избавления от вертикального scrollbar
+  display: flex; // Делаем header main footer элементами flexbox
+  flex-direction: column; // Структура flexbox - колонки
+}
+
+.main {
+  flex-grow: 1; // Расталкиваем шапка и подвал к краям
+}
+
+.container {
+  max-width: 1310px; // Ширина контейнера 1280px + отступы слева 15px и справа 15px
+  margin: 0 auto; // Контейнер по центру
+  padding: 0 15px; // Отступы от окна браузера
+  height: 100%; // Высота 100% высоты родителя
+
+  &--large {
+    max-width: 1340px;
+  }
+  &--small {
+    max-width: 1059px; // 1029+15+15
+  }
+
+  &--micro {
+    max-width: 881px;
+  }
+}
+
+.body--opened-modal {
+  overflow: hidden; // Fix для модального окна
+}
+
+// Модификатор скрытия элемента
+.none {
+  display: none !important;
+}
