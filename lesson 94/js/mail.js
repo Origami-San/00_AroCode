@@ -42,7 +42,12 @@
   // Modal Window / Оптимизированный код закрытия если event.target = true и click на modal или modal__close-btn то закрываем модальное окно
 
   modalWindow.addEventListener("click", (event) => {
-    if (event.target && (event.target.classList.contains("modal") || event.target.classList.contains("modal__close-btn"))) {
+    if (
+      event.target &&
+      (event.target.classList.contains("modal") ||
+        event.target.classList.contains("modal__close") ||
+        event.target.classList.contains("modal__close-btn"))
+    ) {
       closeModals();
     }
   });

@@ -241,6 +241,7 @@ body.overflow {
   border-radius: 10px;
   background-color: #daf765;
   border: 1px solid #dadec9;
+  text-align: start;
 }
 
 .info:hover {
@@ -257,7 +258,7 @@ li a {
   padding: 12px 18px;
 }
 
-.content__list-diplom {
+/* .content__list-diplom {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -266,7 +267,7 @@ li a {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #dadec9;
-}
+} */
 
 .content__list-update h2 {
   font-weight: 500;
