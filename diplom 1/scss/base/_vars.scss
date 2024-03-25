@@ -44,6 +44,12 @@
   }
 }
 
+@mixin desktop-medium-xl() {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+
 @mixin desktop-medium() {
   @media (max-width: 1200px) {
     @content;

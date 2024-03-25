@@ -6,7 +6,7 @@
     <title>Stopradiators</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/splide.min.css" />
+    <!-- <link rel="stylesheet" href="./css/splide.min.css" /> -->
     <!-- Marquiz script start -->
     <script>
       (function (w, d, s, o) {
@@ -308,25 +308,28 @@
               <h2 class="quiz__title title">
                 <span>Подберем и рассчитаем</span> водяной теплый пол <span>для&nbsp;Вашего объекта</span> в течении 24 часов
               </h2>
-              <!-- <div class="quiz__item"></div> -->
-              <div data-marquiz-id="65d231373919de0026bc1d1f"></div>
-              <script>
-                (function (t, p) {
-                  window.Marquiz
-                    ? Marquiz.add([t, p])
-                    : document.addEventListener("marquizLoaded", function () {
-                        Marquiz.add([t, p]);
-                      });
-                })("Inline", {
-                  id: "65d231373919de0026bc1d1f",
-                  buttonText: "Пройти квиз",
-                  bgColor: "#cfa16a",
-                  textColor: "#ffffff",
-                  rounded: true,
-                  shadow: "rgba(207, 161, 106, 0.5)",
-                  blicked: true,
-                });
-              </script>
+              <div class="quiz__item">
+                <div data-marquiz-id="65d231373919de0026bc1d1f"></div>
+                <script>
+                  (function (t, p) {
+                    window.Marquiz
+                      ? Marquiz.add([t, p])
+                      : document.addEventListener("marquizLoaded", function () {
+                          Marquiz.add([t, p]);
+                        });
+                  })("Inline", {
+                    id: "65d231373919de0026bc1d1f",
+                    buttonText: "Пройти квиз",
+                    bgColor: "#cfa16a",
+                    textColor: "#ffffff",
+                    rounded: true,
+                    shadow: "rgba(207, 161, 106, 0.5)",
+                    blicked: true,
+                    buttonOnMobile: true,
+                    height: "536",
+                  });
+                </script>
+              </div>
             </div>
           </div>
         </section>
@@ -566,81 +569,79 @@
           </div>
         </section>
 
-        <section class="main__sliders" id="sliders">
-          <div class="container container--large">
-            <div class="sliders__inner">
-              <h2 class="sliders__title title"><span>Примеры</span> наших работ</h2>
-              <div class="sliders__items swiper">
+        <section class="main__gallery">
+          <div class="container container--nopadding">
+            <div class="gallery">
+              <h2 class="gallery__title title"><span>Примеры</span> наших работ</h2>
+              <!-- Slider main container -->
+              <div class="swiper main-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="slider__item swiper-slide">
-                    <div class="slider__grid">
-                      <section id="workExampleOne" class="splide splide__main-slide" aria-label="Примеры работ">
-                        <div class="splide__track">
-                          <ul class="splide__list">
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                          </ul>
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="second-swiper second-swiper-1 swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
                         </div>
-                        <div class="splide__arrows">
-                          <button class="splide__arrow splide__arrow--prev">
-                            <img src="./img/icons/slider/arrow_left.svg" alt="" />
-                          </button>
-                          <button class="splide__arrow splide__arrow--next">
-                            <img src="./img/icons/slider/arrow_right.svg" alt="" />
-                          </button>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </a>
                         </div>
-                      </section>
-                      <div class="slider__desc">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-4.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-5.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-6.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-7.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-8.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-10.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                          </a>
+                        </div>
+                      </div>
+                      <!-- If we need navigation buttons -->
+                      <button class="second-swiper-btn second-swiper-btn-prev swiper-button-prev_1">
+                        <img src="./img/icons/slider/arrow_left.svg" alt="" />
+                      </button>
+                      <button class="second-swiper-btn second-swiper-btn-next swiper-button-next_1">
+                        <img src="./img/icons/slider/arrow_right.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="second-swiper-items">
+                      <div class="text-swiper-container">
                         <div class="slider__name">
                           <img src="./img/icons/slider/marker.svg" alt="" />
                           <p>
@@ -664,94 +665,89 @@
                             <p class="slider__detail-period">2 недели</p>
                           </div>
                         </div>
-                        <div class="splide__grid-inner">
-                          <section id="workExampleOneThumbnail" class="splide splide__grid" aria-label="The carousel with thumbnails.">
-                            <div class="splide__track">
-                              <ul class="splide__list">
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                              </ul>
-                            </div>
-                          </section>
+                      </div>
+                      <!-- Слайдер миниатюр (thumbs) для внутреннего слайдера -->
+                      <div class="thumbs-swiper-container thumbs-swiper-container-1 swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-7.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-8.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-10.jpg" /></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
-                    <div class="slider__grid">
-                      <section id="workExampleTwo" class="splide splide__main-slide" aria-label="Примеры работ">
-                        <div class="splide__track">
-                          <ul class="splide__list">
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                          </ul>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="second-swiper second-swiper-2 swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
                         </div>
-                        <div class="splide__arrows">
-                          <button class="splide__arrow splide__arrow--prev">
-                            <img src="./img/icons/slider/arrow_left.svg" alt="" />
-                          </button>
-                          <button class="splide__arrow splide__arrow--next">
-                            <img src="./img/icons/slider/arrow_right.svg" alt="" />
-                          </button>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </a>
                         </div>
-                      </section>
-                      <div class="slider__desc">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-4.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-5.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-6.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-7.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-8.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-10.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                          </a>
+                        </div>
+                      </div>
+                      <!-- If we need navigation buttons -->
+                      <button class="second-swiper-btn second-swiper-btn-prev swiper-button-prev_2">
+                        <img src="./img/icons/slider/arrow_left.svg" alt="" />
+                      </button>
+                      <button class="second-swiper-btn second-swiper-btn-next swiper-button-next_2">
+                        <img src="./img/icons/slider/arrow_right.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="second-swiper-items">
+                      <div class="text-swiper-container">
                         <div class="slider__name">
                           <img src="./img/icons/slider/marker.svg" alt="" />
                           <p>
@@ -775,94 +771,89 @@
                             <p class="slider__detail-period">2 недели</p>
                           </div>
                         </div>
-                        <div class="splide__grid-inner">
-                          <section id="workExampleTwoThumbnail" class="splide splide__grid" aria-label="The carousel with thumbnails.">
-                            <div class="splide__track">
-                              <ul class="splide__list">
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                              </ul>
-                            </div>
-                          </section>
+                      </div>
+                      <!-- Слайдер миниатюр (thumbs) для внутреннего слайдера -->
+                      <div class="thumbs-swiper-container thumbs-swiper-container-2 swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-7.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-8.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-10.jpg" /></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
-                    <div class="slider__grid">
-                      <section id="workExampleThree" class="splide splide__main-slide" aria-label="Примеры работ">
-                        <div class="splide__track">
-                          <ul class="splide__list">
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                            <li class="splide__slide">
-                              <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg"
-                                ><img src="https://swiperjs.com/demos/images/nature-3.jpg"
-                              /></a>
-                            </li>
-                          </ul>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="second-swiper second-swiper-3 swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
                         </div>
-                        <div class="splide__arrows">
-                          <button class="splide__arrow splide__arrow--prev">
-                            <img src="./img/icons/slider/arrow_left.svg" alt="" />
-                          </button>
-                          <button class="splide__arrow splide__arrow--next">
-                            <img src="./img/icons/slider/arrow_right.svg" alt="" />
-                          </button>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-2.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </a>
                         </div>
-                      </section>
-                      <div class="slider__desc">
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-3.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-4.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-5.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-6.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-7.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-8.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-1.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </a>
+                        </div>
+                        <div class="swiper-items swiper-slide">
+                          <a data-fslightbox="gallery" class="fs__slide" href="https://swiperjs.com/demos/images/nature-10.jpg">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                          </a>
+                        </div>
+                      </div>
+                      <!-- If we need navigation buttons -->
+                      <button class="second-swiper-btn second-swiper-btn-prev swiper-button-prev_3">
+                        <img src="./img/icons/slider/arrow_left.svg" alt="" />
+                      </button>
+                      <button class="second-swiper-btn second-swiper-btn-next swiper-button-next_3">
+                        <img src="./img/icons/slider/arrow_right.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="second-swiper-items">
+                      <div class="text-swiper-container">
                         <div class="slider__name">
                           <img src="./img/icons/slider/marker.svg" alt="" />
                           <p>
@@ -886,51 +877,52 @@
                             <p class="slider__detail-period">2 недели</p>
                           </div>
                         </div>
-                        <div class="splide__grid-inner">
-                          <section id="workExampleThreeThumbnail" class="splide splide__grid" aria-label="The carousel with thumbnails.">
-                            <div class="splide__track">
-                              <ul class="splide__list">
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                                <li class="splide__slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></li>
-                              </ul>
-                            </div>
-                          </section>
+                      </div>
+                      <!-- Слайдер миниатюр (thumbs) для внутреннего слайдера -->
+                      <div class="thumbs-swiper-container thumbs-swiper-container-3 swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-7.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-8.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+                          <div class="swiper-slide swiper-slide-thumbs"><img src="https://swiperjs.com/demos/images/nature-10.jpg" /></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="sliders__tab">
-                <button class="sliders__btn sliders__btn--prev" id="slidersPrev" type="button">
-                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.64465 2.63401L2.9309 7.34776L7.64465 12.0615C8.11845 12.5353 8.11845 13.3007 7.64465 13.7745C7.17084 14.2483 6.40547 14.2483 5.93166 13.7745L0.355353 8.19818C-0.118451 7.72437 -0.118451 6.959 0.355353 6.48519L5.93166 0.908881C6.40547 0.435077 7.17084 0.435077 7.64465 0.908881C8.1063 1.38269 8.11845 2.16021 7.64465 2.63401Z"
-                      fill="#5E7288"
-                    />
-                  </svg>
-                </button>
-                <div class="sliders__pagination"></div>
-                <button class="sliders__btn sliders__btn--next" id="slidersNext" type="button">
-                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.64465 2.63401L2.9309 7.34776L7.64465 12.0615C8.11845 12.5353 8.11845 13.3007 7.64465 13.7745C7.17084 14.2483 6.40547 14.2483 5.93166 13.7745L0.355353 8.19818C-0.118451 7.72437 -0.118451 6.959 0.355353 6.48519L5.93166 0.908881C6.40547 0.435077 7.17084 0.435077 7.64465 0.908881C8.1063 1.38269 8.11845 2.16021 7.64465 2.63401Z"
-                      fill="#5E7288"
-                    />
-                  </svg>
-                </button>
+                <div class="main-swiper-nav">
+                  <!-- If we need navigation buttons -->
+                  <button class="main-swiper-btn main-swiper-btn-prev">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.64465 2.63401L2.9309 7.34776L7.64465 12.0615C8.11845 12.5353 8.11845 13.3007 7.64465 13.7745C7.17084 14.2483 6.40547 14.2483 5.93166 13.7745L0.355353 8.19818C-0.118451 7.72437 -0.118451 6.959 0.355353 6.48519L5.93166 0.908881C6.40547 0.435077 7.17084 0.435077 7.64465 0.908881C8.1063 1.38269 8.11845 2.16021 7.64465 2.63401Z"
+                        fill="#5E7288"
+                      />
+                    </svg>
+                  </button>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                  <button class="main-swiper-btn main-swiper-btn-next">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.64465 2.63401L2.9309 7.34776L7.64465 12.0615C8.11845 12.5353 8.11845 13.3007 7.64465 13.7745C7.17084 14.2483 6.40547 14.2483 5.93166 13.7745L0.355353 8.19818C-0.118451 7.72437 -0.118451 6.959 0.355353 6.48519L5.93166 0.908881C6.40547 0.435077 7.17084 0.435077 7.64465 0.908881C8.1063 1.38269 8.11845 2.16021 7.64465 2.63401Z"
+                        fill="#5E7288"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
         <section class="main__building">
           <div class="container">
             <h2 class="building__title title">Работаем с любыми <span>типами зданий</span></h2>
@@ -1655,7 +1647,7 @@
     <!-- JavaScript -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=022aa920-4750-4e65-897b-ec9c7f52df41&lang=ru_RU"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/splide.min.js"></script>
+    <!-- <script src="./js/splide.min.js"></script> -->
     <script src="./js/fslightbox.js"></script>
     <script src="./js/inputmask.min.js"></script>
     <script src="./js/main.js"></script>

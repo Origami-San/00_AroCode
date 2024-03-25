@@ -71,28 +71,6 @@
   // });
   // });
 
-  // Swiper Sliders
-  const swiper = new Swiper(".sliders__items", {
-    // Optional parameters
-    // direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // loop: true,
-    // freeMode: true,
-
-    // If we need pagination
-    pagination: {
-      el: ".sliders__pagination",
-      clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: "#slidersNext",
-      prevEl: "#slidersPrev",
-    },
-  });
-
   // Sliders-installation
   new Swiper(".installation__swiper", {
     // loop: true,
@@ -132,65 +110,77 @@
     },
   });
 
-  // Swiper Slider One
-  const mySliderOne = new Splide("#workExampleOne", {
-    perPage: 1,
-    gap: "20px",
-    pagination: false,
-    rewind: true,
-    type: "fade",
-  }).mount();
+  // Swiper Gallery
+  // Инициализация основного внешнего слайдера
+  const mainSwiper = new Swiper(".main-swiper", {
+    spaceBetween: 15, // Расстояние между слайдами
+    simulateTouch: false, // Отменяем перетаскивание основного слайдера
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".main-swiper-btn-next",
+      prevEl: ".main-swiper-btn-prev",
+    },
+  });
 
-  const thumbnailOne = new Splide("#workExampleOneThumbnail", {
-    fixedWidth: 100,
-    fixedHeight: 100,
-    // gap: 10,
-    rewind: true,
-    pagination: false,
-    isNavigation: true,
-  }).mount();
+  // Инициализация миниатюры первого (1) внутреннего слайдера
+  const thumbsSwiperOne = new Swiper(".thumbs-swiper-container-1", {
+    touchRatio: 0, // Отключаем перетаскивание
+  });
 
-  mySliderOne.sync(thumbnailOne);
+  // Инициализация первого (1) внутреннего слайдера
+  const secondSwiperOne = new Swiper(".second-swiper-1", {
+    effect: "fade",
+    simulateTouch: false, // Отменяем перетаскивание основного слайдера
+    navigation: {
+      nextEl: ".swiper-button-next_1",
+      prevEl: ".swiper-button-prev_1",
+    },
+    //Добавление миниатюр к внутреннему слайдеру
+    thumbs: {
+      swiper: thumbsSwiperOne,
+    },
+  });
 
-  // Swiper Slider Two
-  const mySliderTwo = new Splide("#workExampleTwo", {
-    perPage: 1,
-    gap: "20px",
-    pagination: false,
-    rewind: true,
-    type: "fade",
-  }).mount();
+  // Инициализация миниатюры первого (1) внутреннего слайдера
+  const thumbsSwiperTwo = new Swiper(".thumbs-swiper-container-2", {
+    touchRatio: 0, // Отключаем перетаскивание
+  });
 
-  const thumbnailTwo = new Splide("#workExampleTwoThumbnail", {
-    fixedWidth: 100,
-    fixedHeight: 100,
-    // gap: 10,
-    rewind: true,
-    pagination: false,
-    isNavigation: true,
-  }).mount();
+  // Инициализация первого (1) внутреннего слайдера
+  const secondSwiperTwo = new Swiper(".second-swiper-2", {
+    effect: "fade",
+    simulateTouch: false, // Отменяем перетаскивание основного слайдера
+    navigation: {
+      nextEl: ".swiper-button-next_2",
+      prevEl: ".swiper-button-prev_2",
+    },
+    //Добавление миниатюр к внутреннему слайдеру
+    thumbs: {
+      swiper: thumbsSwiperTwo,
+    },
+  });
 
-  mySliderTwo.sync(thumbnailTwo);
+  // Инициализация миниатюры первого (1) внутреннего слайдера
+  const thumbsSwiperTree = new Swiper(".thumbs-swiper-container-3", {
+    touchRatio: 0, // Отключаем перетаскивание
+  });
 
-  // Swiper Slider Three
-  const mySliderThree = new Splide("#workExampleThree", {
-    perPage: 1,
-    gap: "20px",
-    pagination: false,
-    rewind: true,
-    type: "fade",
-  }).mount();
-
-  const thumbnailThree = new Splide("#workExampleThreeThumbnail", {
-    fixedWidth: 100,
-    fixedHeight: 100,
-    // gap: 10,
-    rewind: true,
-    pagination: false,
-    isNavigation: true,
-  }).mount();
-
-  mySliderThree.sync(thumbnailThree);
+  // Инициализация первого (1) внутреннего слайдера
+  const secondSwiperTree = new Swiper(".second-swiper-3", {
+    effect: "fade",
+    simulateTouch: false, // Отменяем перетаскивание основного слайдера
+    navigation: {
+      nextEl: ".swiper-button-next_3",
+      prevEl: ".swiper-button-prev_3",
+    },
+    //Добавление миниатюр к внутреннему слайдеру
+    thumbs: {
+      swiper: thumbsSwiperTree,
+    },
+  });
 
   // Accordion
 

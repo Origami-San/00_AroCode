@@ -33,9 +33,11 @@ body {
   &--small {
     max-width: 1059px; // 1029+15+15
   }
-
   &--micro {
     max-width: 881px;
+  }
+  &--nopadding {
+    padding: 0;
   }
 }
 

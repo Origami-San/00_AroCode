@@ -1,0 +1,347 @@
+// Общие параметры контейнера
+.gallery {
+  padding: 53px 0 38px 0;
+}
+.gallery__title {
+  // Positioning
+  text-align: center;
+  padding-bottom: 42px;
+}
+
+// Общие параметры контейнера основного слайдера
+.main-swiper .swiper-slide {
+  // Display
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include desktop-medium-xl() {
+    justify-content: center;
+  }
+}
+
+// Параметры внутренних слайдов
+.second-swiper {
+  // Position
+  position: relative;
+  //Size
+  max-width: 653px;
+  width: 100%;
+  height: 380px;
+  // Display
+  overflow: hidden;
+  // Decor
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(102, 102, 102, 0.25);
+  // Отступы для box-shadow
+  margin: 0 15px;
+
+  @include mobile-large() {
+    height: 300px;
+  }
+}
+
+// Параметры изображения внутренних слайдов
+.second-swiper img {
+  max-width: 100%;
+}
+
+// Параметры части с описанием и миниатюрами
+.second-swiper-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //Size
+  max-width: 525px;
+  width: 100%;
+  // Отступы для box-shadow
+  margin: 0 15px;
+}
+
+.text-swiper-container {
+  padding-right: 5px;
+
+  @include desktop-medium-xl() {
+    padding-top: 20px;
+  }
+}
+
+.slider__name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 7px;
+
+  p {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px; /* 100% */
+    letter-spacing: 0.176px;
+    text-transform: uppercase;
+  }
+
+  .name__area {
+    color: var(--accent);
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: "2";
+      position: absolute;
+      top: -1px;
+      right: -7px;
+      font-size: 13px;
+    }
+  }
+}
+
+.slider__detail {
+  margin-top: 17px;
+  display: grid;
+  gap: 3px;
+  margin-left: 7px;
+
+  .slider__detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #75757566;
+    padding-bottom: 2px;
+  }
+
+  .slider__detail-title {
+    color: var(--text-desc);
+    font-size: 16px;
+    line-height: 16px; /* 100% */
+    letter-spacing: 0.128px;
+  }
+  .slider__detail-price,
+  .slider__detail-period {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 0.104px;
+    text-transform: uppercase;
+  }
+
+  .slider__detail-price {
+    &::after {
+      content: "Р";
+      margin-left: 2px;
+    }
+  }
+}
+
+// Параметры контейнера с кнопками навигации общего слайдера
+.main-swiper-nav {
+  // Display
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //Size
+  height: 56px;
+  // Position
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+// Параметры кнопок навигации общего слайдера
+.main-swiper-btn {
+  // Position
+  position: relative;
+  // Display
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  // Size
+  height: 26px;
+  width: 26px;
+  // Color
+  background-color: transparent;
+  // Animation
+  opacity: 1;
+  // Other
+  z-index: 12;
+
+  svg {
+    path {
+      transition: var(--transition-all);
+    }
+  }
+
+  &.swiper-button-disabled {
+    cursor: default;
+    svg {
+      path {
+        // Animation
+        opacity: 0.3;
+        transition: var(--transition-all);
+      }
+    }
+  }
+}
+.main-swiper-btn-prev {
+}
+.main-swiper-btn-next {
+  transform: rotate(180deg);
+}
+
+// Параметры кнопок пагинации
+// Выравниваем кнопки пагинации внутри контейнера
+.main-swiper-nav .swiper-pagination {
+  // Display
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Отменяем стандартные отступы
+  bottom: auto !important;
+}
+.main-swiper-nav .swiper-pagination-bullets {
+  // Display
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  // Отменяем стандартные отступы
+  margin: 0;
+}
+// Цвет и размер НЕактивных bullets
+.main-swiper-nav .swiper-pagination-bullets .swiper-pagination-bullet {
+  // Color
+  background: #798797;
+  // Отменяем стандартную прозрачность
+  opacity: 1;
+  // Отменяем стандартные отступы
+  margin: 0 !important;
+  // Animation
+  transition: var(--transition-all);
+}
+// Цвет и размер Активных bullets
+.main-swiper-nav .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  // Color
+  background: #bb8e34;
+  // Size
+  transform: scale(1.37);
+}
+
+// Параметры кнопок навигации встроенного слайдера
+.second-swiper-btn {
+  // Display
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Size
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: var(--transition-all);
+  // Position
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+
+  &.swiper-button-disabled {
+    cursor: default;
+    background: #75757599;
+  }
+}
+.second-swiper-btn-prev {
+  left: 10px;
+}
+.second-swiper-btn-next {
+  right: 10px;
+}
+
+// Настройка контейнера с миниатюрами
+.thumbs-swiper-container {
+  margin: 0 -10px;
+
+  @include desktop-medium-xl() {
+    padding-top: 50px;
+  }
+}
+.thumbs-swiper-container .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px 5px;
+}
+
+// Параметры миниатюр
+.swiper-slide-thumbs {
+  // Замена стандартных размеров
+  width: 100px !important;
+  height: 100px !important;
+  // Display
+  border-radius: 4px;
+  overflow: hidden;
+
+  // Все изображения по ширине контейнера
+  img {
+    max-width: 100%;
+  }
+}
+
+.thumbs-swiper-container .swiper-slide {
+  cursor: pointer;
+  transition: var(--transition-all);
+  // Size
+  transform: scale(0.95) !important;
+}
+
+.thumbs-swiper-container .swiper-slide-thumb-active {
+  transform: scale(1) !important;
+}
+
+.swiper-slide-thumbs.swiper-slide-thumb-active {
+  box-shadow: 0 2px 5px 2px rgba(187, 142, 52, 0.6);
+}
+
+// Настройки fslightbox
+.fs__slide {
+  &::before {
+    content: url("../img/icons/slider/zoom.svg");
+    position: absolute;
+    bottom: 3%; // Для анимации ставим 0%
+    right: 3%;
+    z-index: 1;
+    transition: var(--transition-all);
+    opacity: 1; // Для анимации ставим 0
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-image: linear-gradient(#66666600, #3c3c3c68, #222222ab, #000000);
+    transition: var(--transition-all);
+    opacity: 1; // Для анимации ставим 0
+  }
+
+  // Анимация при наведении
+  // &:hover {
+  //   &::after,
+  //   &::before {
+  //     opacity: 1;
+  //   }
+
+  //   &::before {
+  //     bottom: 5%;
+  //   }
+  // }
+}
+
+// Scroll Fix
+.fslightbox-open {
+  overflow: initial !important;
+}
